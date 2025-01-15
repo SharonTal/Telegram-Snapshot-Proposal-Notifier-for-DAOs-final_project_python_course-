@@ -1,0 +1,77 @@
+# Telegram Snapshot Proposal Notifier
+
+## Objective Summary
+In the world of DAOs it is important to stay up to date whenever there is a vote for any matter. 
+The aim of this project is to create a Python-based application that automates the monitoring and notification of active proposals on the Snapshot voting platform. The application fetches proposals from specified Snapshot spaces, checks if they are currently active, and sends real-time notifications to specified Telegram users. This solution enhances user engagement in decentralized governance by providing timely updates and reducing the manual effort required to monitor multiple DAO spaces.
+
+---
+
+## Features
+
+1. **Proposal Monitoring**
+   - Fetch proposals from multiple Snapshot spaces using their unique space IDs.
+   - Filter and identify proposals that are currently active based on start and end times.
+
+2. **Telegram Notifications**
+   - Send automated notifications to a list of predefined Telegram chat IDs when active proposals are identified.
+   - Notifications include details like the DAO space, proposal title, and other relevant metadata.
+
+3. **Tracking Sent Notifications**
+   - Maintain a record of sent proposal notifications to avoid duplicate alerts.
+   - Use a local text file to store IDs of proposals already notified.
+
+4. **Error Handling and Logs**
+   - Log errors encountered during API calls or notification processing for debugging and optimization.
+   - Provide informative messages on failed notifications or data-fetching attempts.
+
+---
+
+## Installation
+
+1. Clone the repository to your local machine:
+   
+
+
+2. Ensure Python 3.x is installed .
+
+3. Install the required Python libraries using pip:
+
+4. Configure the script by updating the following variables in the script:
+   - `bot_token`: Your Telegram bot token.
+   - `chat_ids`: List of Telegram chat IDs to send notifications.
+   - `space_ids`: List of Snapshot space IDs to monitor.
+   - `sent_ids_file`: Path to the file tracking notified proposal IDs.
+
+---
+
+
+## Workflow
+
+1. **Initialization**
+   - Set up the list of Snapshot space IDs, Telegram bot token, and chat IDs.
+   - Initialize a local file to track notified proposal IDs.
+
+2. **Proposal Fetching**
+   - Query the Snapshot GraphQL API to retrieve proposals from the specified spaces.
+   - Parse and format the proposal data for processing.
+
+3. **Notification Dispatch**
+   - Identify active proposals based on current time and proposal start/end times.
+   - Send notifications for new active proposals to Telegram users.
+
+4. **Tracking and Optimization**
+   - Log notified proposal IDs to the tracking file.
+   - Optimize the script by handling API rate limits and errors gracefully.
+
+---
+
+## Technical Stack
+
+- **Core Language**: Python
+- **APIs**: Snapshot GraphQL API for fetching proposals, Telegram Bot API for sending notifications
+- **Libraries**: `requests`, `datetime`
+- **File Storage**: Local text file to track notified proposal IDs
+---
+
+
+By implementing this project, DAO participants can stay updated on governance activities with minimal effort, fostering increased participation and decision-making.
