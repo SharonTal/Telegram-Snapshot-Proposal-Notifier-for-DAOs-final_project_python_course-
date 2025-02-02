@@ -1,7 +1,11 @@
 import requests
 from datetime import datetime
+import os 
 
-def read_sent_proposal_ids(file_path):
+
+
+def read_sent_proposal_ids(file_name="sent_proposal_ids.txt"):
+    file_path = os.path.join(os.path.dirname(__file__), file_name)
     try:
         with open(file_path, 'r') as file:
             return file.read().splitlines()

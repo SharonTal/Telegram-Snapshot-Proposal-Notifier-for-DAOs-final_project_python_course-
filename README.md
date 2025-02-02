@@ -61,6 +61,7 @@ The application fetches proposals from specified Snapshot spaces, checks if they
 1. **Initialization**
    - Set up the list of Snapshot space IDs, Telegram bot token, and Telegram chat IDs.
    - Initialize a local file to track the IDs of notified proposals.
+   Important to find at the telegram the name of the bot "Vegitabot", but look after the @SpacesCheckBot and click "/start"
 
 2. **Proposal Fetching**
    - The script queries the Snapshot GraphQL API to retrieve proposals from the specified spaces.
