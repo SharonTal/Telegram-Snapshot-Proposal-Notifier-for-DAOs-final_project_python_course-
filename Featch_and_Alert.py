@@ -75,7 +75,7 @@ def send_active_proposals(proposals, bot_token, chat_ids, sent_ids_file):
 
 space_ids = ['beanstalkdao.eth', 'balancer.eth', 'gmx.eth', 'cakevote.eth']
 bot_token = '6959566469:AAGAwM8v8nFn-KuID99ek0cVYFeMEboOUDc'
-chat_ids = ['1035984563']
+chat_ids = ['## user : set here your chat ID ']
 
 sent_ids_file = "sent_proposal_ids.txt"
 
