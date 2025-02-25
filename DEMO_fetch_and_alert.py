@@ -99,7 +99,7 @@ space_ids = [
 ]
 
 bot_token = '6959566469:AAGAwM8v8nFn-KuID99ek0cVYFeMEboOUDc'
-chat_ids = ['1035984563']
+chat_ids = ['###insert your token here']
 file_name = "sent_proposal_ids.txt"
 
 proposals = fetch_proposals(space_ids)
