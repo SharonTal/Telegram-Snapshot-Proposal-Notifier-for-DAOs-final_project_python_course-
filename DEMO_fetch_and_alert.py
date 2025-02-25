@@ -92,10 +92,14 @@ space_ids = [
     "cakevote.eth",
     "aave.eth",
     "uniswap.eth",
+    "compound.eth",
+    "sushigov.eth",
+    "yearn.eth",
+    "synthetix.eth",
 ]
 
 bot_token = '6959566469:AAGAwM8v8nFn-KuID99ek0cVYFeMEboOUDc'
-chat_ids = ['### insert your ID here #### ']
+chat_ids = ['1035984563']
 file_name = "sent_proposal_ids.txt"
 
 proposals = fetch_proposals(space_ids)
