@@ -33,8 +33,8 @@ The application fetches proposals from specified Snapshot spaces, checks if they
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone <repository_url>
-    cd <repository_folder>
+    git clone https://github.com/SharonTal/Telegram-Snapshot-Proposal-Notifier-for-DAOs-final_project_python_course-.git
+    cd Telegram-Snapshot-Proposal-Notifier-for-DAOs-final_project_python_course-
     ```
 
 2. Ensure Python 3.x is installed on your machine:
@@ -45,7 +45,7 @@ The application fetches proposals from specified Snapshot spaces, checks if they
 3. Configure the script by updating the following variables in the main script (`main.py` or the primary execution file):
 
     - **`bot_token`**: Your Telegram bot token (you can create a Telegram bot using [BotFather](https://t.me/botfather)).
-    - **`chat_ids`**: List of Telegram chat IDs to send notifications to. You can get your chat ID from [this guide](https://t.me/userinfobot).
+    - **`chat_ids`**: List of Telegram chat IDs to send notifications to. You can get your chat ID from [this chat](https://t.me/userinfobot).
     - **`space_ids`**: List of Snapshot space IDs to monitor. You can find space IDs by visiting a DAO’s page on Snapshot (e.g., `aave.eth`).
     - **`sent_ids_file`**: Path to the local file where IDs of sent notifications are tracked (default: `sent_proposals.txt`).
 
