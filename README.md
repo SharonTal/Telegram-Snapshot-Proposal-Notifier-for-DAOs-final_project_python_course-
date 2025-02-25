@@ -42,12 +42,7 @@ The application fetches proposals from specified Snapshot spaces, checks if they
     python --version
     ```
 
-3. Install the required Python libraries using pip:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Configure the script by updating the following variables in the main script (`main.py` or the primary execution file):
+3. Configure the script by updating the following variables in the main script (`main.py` or the primary execution file):
 
     - **`bot_token`**: Your Telegram bot token (you can create a Telegram bot using [BotFather](https://t.me/botfather)).
     - **`chat_ids`**: List of Telegram chat IDs to send notifications to. You can get your chat ID from [this guide](https://t.me/userinfobot).
